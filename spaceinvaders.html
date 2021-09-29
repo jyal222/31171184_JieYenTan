@@ -1,0 +1,76 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="./dist/spaceinvaders.js"></script>
+  <title>Space Invader</title>
+</head>
+
+<body>
+  <h1 class="highlight">Space Invaders</h1>
+
+  <main class="main-container">
+    <div class="game-container">
+      <div class="score-container">
+        <div class="score-row row">
+          <div class="score-column column">
+            <p>SCORE</p>
+            <p id="score">00</p>
+          </div>
+          <div class="score-column column">
+            <p>HIGHSCORE</p>
+            <p id="highscore">00</p>
+          </div>
+          <div class="score-column column">
+            <p>LEVEL</p>
+            <p id="level">00</p>
+          </div>
+          <div class="score-column column">
+            <p>LIFE</p>
+            <p id="life">00</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-container">
+        <div class="menu-row row">
+          <div class="menu-column column">
+            <button id="btn-start" class="menu-btn">Start</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="svg-container">
+        <svg id="canvas" width="600" height="600">
+          <g id="spaceship" transform="translate(280,530)">
+            <image href="public/spaceship.png" height="40" width="40"></image>
+          </g>
+        </svg>
+
+        <div id="gameover" class="gameover">
+          <p>Game Over</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="instructions-container">
+      <h2>
+        Instruction
+      </h2>
+
+      <div class="instructions">
+        <ol>
+          <li>Press <b>START</b> button.</li>
+          <li>Press arrow key to move <b>left</b> and <b>right</b>.</li>
+          <li>Avoid bullets shooting by Aliens!</li>
+          <li>Avoid colliding with Aliens!</li>
+          <li>Catch hearts to get more lives!</li>
+        </ol>
+      </div>
+    </div>
+  </main>
+
+
+</body>
+
+</html>

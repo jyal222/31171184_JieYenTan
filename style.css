@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'VT323', monospace;
+  letter-spacing: 2px;
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+.main-container {
+  display: flex;
+}
+
+.instructions-container * {
+  font-family: arial, helvetica, sans-serif;
+}
+
+.instructions-container {
+  flex: 1;
+  padding: 1rem 2rem;
+  background-color: whitesmoke;
+}
+
+.game-container {
+  position: relative;
+  width: 600px;
+  background-color: rgb(41, 41, 36);
+}
+
+.score-container {
+  color: white;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-size: 24px;
+}
+
+.score-column p {
+  margin: 0;
+  margin-bottom: .5rem;
+}
+
+.menu-container {
+  color: white;
+  padding: 1rem;
+}
+
+.menu-btn {
+  padding: .5rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.svg-container {
+  position: relative;
+}
+
+.gameover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, .3);
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+
+.gameover p {
+  font-size: 5rem;
+  color: red;
+}
